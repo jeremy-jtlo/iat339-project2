@@ -1,0 +1,39 @@
+div.box {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}
+
+#darkred {
+	background-color: #700C2A;
+}
+
+#lightred {
+	background-color: #E94B69;
+}
+
+#grey {
+	background-color: #DBD6D6;
+}
+
+#bluegrey{
+	background-color: #384448;
+}
+
+#darkbluegrey{
+	background-color: #11151B;
+}
+
+div p{
+	font-family: Open Sans, verdana, sans serif;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+h2.divider{
+	margin: 1em 0;
+	padding: 0.5em 0;
+	border-top: 0.06em solid #DBD6D6;
+}
+
