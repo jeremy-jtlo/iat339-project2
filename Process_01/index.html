@@ -1,0 +1,189 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<title>IAT339 - Process 01 Style Guides</title>
+	<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+
+	<article>
+
+      <h1 class="heading">P01 - Style Guides</h1>
+
+<!-- navigation -->
+			<header>
+				<nav>   
+          <h2>On this page:</h2>
+          <ul>
+            <li>
+              <a href="#interactive_elements">Interactive Elements</a>
+            </li>
+            <li>
+              <a href="#text_elements">Text Elements</a>
+            </li>
+         </ul>
+				</nav>
+
+        <nav>
+          <h2>User-Flows Wireframes</h2>
+          <ul>
+            <li>
+              <a href="smartwatch/home.html">Smartwatch</a>
+            </li>
+            <li>
+              <a href="smart-phone/home.html">Smartphone</a>
+            </li>
+            <li>
+              <a href="4k/home.html">4k Display</a>
+            </li>
+          </ul>
+          <h2>Citations</h2>
+          <ul>
+            <li><a href="citation.html">Citations</a></li>
+          </ul>
+        </nav>
+			</header>
+
+
+<!-- Interactive Elements -->
+      <h1 class="heading" id="interactive_elements">Interactive Elements</h1>
+      <h2 class="divider">Navigation Button</h2>
+      <h3>CSS: Selector: button-nav.bg1</h3>
+         <div class="grid-col-2of10">
+              <a href="#linkhere" class="button-nav bg1">Home</a>
+              <a href="#linkhere" class="button-nav bg1">Products</a>
+              <a href="#linkhere" class="button-nav bg1">About</a>
+          </div>
+      <h3>Sample Code:</h3>
+      <code>&lt;a href=&quot;#linkhere&quot; class=&quot;button-nav bg1&quot;&gt;Smartwatch&lt;/a&gt;</code>
+
+
+
+<!-- Text Elements -->
+
+      <h1 class="heading" id="text_elements">Text Elements</h1>
+      
+
+        <h2 class="divider">In-text Link</h2>
+        <h3>CSS Selector: a</h3>
+        <p>Red is a company that creates <a href="">pills full of creativity</a> that does almost nothing but make you feel...well, creative!</p>
+        <code>&lt;p&gt;Red is a company that creates &lt;a href=&quot;http://www.linkhere.com&quot;&gt;pills full of creativity&lt;/a&gt; that does almost nothing but make you feel...well, creative!&lt;/p&gt;</code>
+
+        <h2 class="divider">Submit/Reset Buttons</h2>
+        <h3>CSS Selector: .button-nav.bg1 and .button-nav.bg2</h3>
+        <a href="#linkhere" class="button-nav bg1">Submit</a>
+        <a href="#linkhere" class="button-nav bg2">Reset</a>
+        <h3>Sample Code:</h3>
+        <code>&lt;a href=&quot;#linkhere&quot; class=&quot;button-nav bg2&quot;&gt;Reset&lt;/a&gt;</code>
+
+
+    
+
+        <h2 class="divider">Text Input Field</h2>
+        <h3>CSS Selector: input, textarea</h3>
+        <form>
+        <label for="formfield">A single Form Field</label><br>
+        <input type="text" name="formfield">
+        </form>
+        <br>
+        <label>Comment box</label><br>
+        <textarea rows="4" cols="50" placeholder="Please write in here!"></textarea>
+        <h3>Sample Code:</h3>
+        <code>&lt;textarea rows=&quot;4&quot; cols=&quot;50&quot; placeholder=&quot;Please write in here!&quot;&gt;&lt;/textarea&gt;</code>
+
+
+        <h2 class="divider">Colour Palette</h2>
+        <h3>CSS Selector: div.box</h3>
+          <div>
+          <div class="box" id="darkred"><p>#700C2A</p></div>
+          <div class="box" id="lightred"><p>#E94B69</p></div>
+          <div class="box" id="grey"><p>#DBD6D6</p></div>
+          <div class="box" id="bluegrey"><p>#384448</p></div>
+          <div class="box" id="darkbluegrey"><p>#11151B</p></div>
+          </div>
+         <h3>Sample Code:</h3>
+         <code>&lt;div class=&quot;box&quot; id=&quot;darkbluegrey&quot;&gt;&lt;p&gt;#11151B&lt;/p&gt;&lt;/div&gt;</code>
+
+     
+        <h2 class="divider">Heading</h2>
+        <h3>CSS Selector: h1, h2, h3</h3>
+        <h1>Header at 3rem</h1>
+        <h2>Subheader at 1.5rem</h2>
+        <h3>Subtitles at 1.25rem</h3>
+        <code>&lt;h2&gt;Subheader at 1.5rem&lt;/h2&gt;</code>
+
+
+        <h2 class="divider">Paragraphs</h2>
+        <h3>CSS Selector: p</h3>
+        <p>Paragraphs at 1.5rem. Bacon ipsum dolor amet kielbasa turducken chuck boudin, hamburger turkey drumstick t-bone biltong tenderloin <em>flank alcatra kevin bresaola chicken ball tip pork loin meatball. </em>pancetta salami. Bacon spare ribs rump salami, short loin pork loin jowl picanha. Shoulder ham ball tip pork chop. Chuck meatloaf jerky, landjaeger capicola pancetta picanha flank alcatra kevin bresaola chicken ball tip pork loin meatball. <strong>Cupim tongue t-bone shankle porchetta </strong>Cupim tongue t-bone shankle porchetta turkey alcatra chicken cow short loin swine pork chop biltong shank.</p>
+        <p><strong>Bacon is the best, I absolutely love bacon.</strong><br>
+        <em>But the oil is bad for your body, so don't eat that!</em></p>
+
+
+        <h2 class="divider">Bulleted Lists</h2>
+        <h3>CSS Selector: ul</h3>
+        <ul>
+          <li>Red Pill for $800 dollars</li>
+          <li>Blue Pill for $750 dollars</li>
+          <li>Unlimited amount of creativity? Priceless</li>
+        </ul>
+
+        <h3>Sample Code:</h3>
+        <code>&lt;ul&gt;<br> 
+        &lt;li&gt;Red Pill for $800 dollars&lt;/li&gt;<br>
+        &lt;li&gt;Blue Pill for $750 dollars&lt;/li&gt;<br>
+        &lt;li&gt;Unlimited amount of creativity? Priceless&lt;/li&gt;<br>
+        &lt;/ul&gt;</code>
+
+        <h2 class="divider">Numbered Lists</h2>
+        <h3>CSS Selector: ol</h3>
+        <ol>
+          <li>Land on page</li>
+          <li>Navigate to products</li>
+          <li>Analyze products</li>
+          <li>Buy products</li>
+          <li>Login with Username</li>
+          <li>Pay with credit card</li>
+          <li>Confrim order</li>
+        </ol> 
+        <code>&lt;ol&gt;<br> 
+        &lt;li&gt;Land on page&lt;/li&gt;<br>
+        &lt;li&gt;Navigate to products&lt;/li&gt;<br>
+        &lt;li&gt;Analyze products&lt;/li&gt;<br>
+        &lt;li&gt;Buy products&lt;/li&gt;<br>
+        &lt;li&gt;Login with Username&lt;/li&gt;<br>
+        &lt;li&gt;Pay with credit card&lt;/li&gt;<br>
+        &lt;li&gt;Confirm order&lt;/li&gt;<br>
+        &lt;/ol&gt;</code>
+
+<!--         <h2 class="divider">Main Navigation</h2>
+       
+        
+
+        <h2 class="divider">Product Listing</h2>
+
+     --> 
+    
+    <!--   <figure>
+        <img alt="A kitten" height="300" src="img/cat.jpeg" width="2of100">
+        <figcaption>It's a bundle of cute, cuddly, death!</figcaption>
+      </figure>
+ -->
+      
+
+    </article>
+	
+<p>Created by Vincent Wah<br>
+    IAT 339 - D201</p>
+
+</body>
+
+
+<!-- Citation sites:
+
+http://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder
+
+ -->
