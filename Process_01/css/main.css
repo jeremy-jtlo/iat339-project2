@@ -1,10 +1,7 @@
 .button-nav{
 	width: 100%;
 }
-/* 
-	Please do not edit below this line for the tutorial ----- 
-	Afterwards, well, have fun.
-*/
+
 article {
 	text-align: left;
 	margin: 2rem 0; 
@@ -17,13 +14,16 @@ article {
 /*button 1*/
 .button-nav.bg1, .button-nav.bg1:visited {
 	display: inline-block;
+	text-align: center;
 	background-color: #700C2A;
 	color: #FFFFFF;
 	padding: 1em 1em;
 	text-decoration: none;
+
+	border-bottom: solid 0.2rem #290812;
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
-	border-radius: 0.4rem;
+	border-radius: 0.2rem;
 }
 .button-nav.bg1 {
 	width: 8rem;
@@ -31,6 +31,7 @@ article {
 
 .button-nav.bg1:hover, .button-nav.bg1:active, .button-nav.bg1:focus {
 	background-color: #E94B69;
+	border-bottom: solid 0.2rem #700C2A;
 	color: white;
 }
 
