@@ -28,6 +28,12 @@ article {
 	border-radius: 0.2rem;
 }
 
+.active.button-nav.bg1 {
+	background-color: #E94B69;
+	border-bottom: solid 0.2rem #700C2A;
+	font-weight: bold;
+}
+
 .button-nav.bg1, .button-nav.bg1:visited {
 	
 	background-color: #700C2A;
