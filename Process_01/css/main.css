@@ -1,3 +1,8 @@
+code {
+	font-family: 'Source Code Pro';
+	font-size: 0.7rem;
+}
+
 .button-nav{
 	width: 100%;
 }
@@ -12,18 +17,22 @@ article {
 }
 
 /*button 1*/
-.button-nav.bg1, .button-nav.bg1:visited {
+.button-nav {
 	display: inline-block;
 	text-align: center;
-	background-color: #700C2A;
-	color: #FFFFFF;
+	text-decoration: none;	
 	padding: 1em 1em;
-	text-decoration: none;
 
-	border-bottom: solid 0.2rem #290812;
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 	border-radius: 0.2rem;
+}
+
+.button-nav.bg1, .button-nav.bg1:visited {
+	
+	background-color: #700C2A;
+	color: #FFFFFF;
+	border-bottom: solid 0.2rem #290812;
 }
 .button-nav.bg1 {
 	width: 8rem;
@@ -38,18 +47,14 @@ article {
 
 /*Button 2*/
 .button-nav.bg2, .button-nav.bg2:visited {
-	display: inline-block;
 	background-color: #384448;
 	color: #FFFFFF;
-	padding: 1em 1em;
-	text-decoration: none;
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-	border-radius: 0.4rem;
+	border-bottom: solid 0.2rem #11151B;
 }
 .button-nav.bg2 {
 	background-color:#384448;
 	width: 8rem;
+	border-bottom: solid 0.2rem #000;
 }
 
 .button-nav.bg2:hover, .button-nav.bg2:active, .button-nav.bg2:focus {
