@@ -21,6 +21,10 @@ body {
 }
 
 /* Navigation */
+nav a {
+	text-decoration: none;
+}
+
 .button-nav {
 	width: 100%;
 }
