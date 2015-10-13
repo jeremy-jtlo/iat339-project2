@@ -1,0 +1,38 @@
+.container{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	flex-wrap: wrap;
+	flex-flow: flex-start;
+	-webkit-flex: 1;
+     flex: 1;
+}
+
+.flex-column-2 {
+          max-width: 16%;
+          margin: 0.5em;
+          }
+
+.flex-column-4 {
+          max-width: 30%;
+          margin: 0.5em;
+          }
+
+.flex-column-6 {
+          max-width: 50%;
+          margin: 0.5em;
+          }
+.flex-column-8 {
+          max-width: 66%;
+          margin: 0.5em;
+          }
+.flex-column-auto {
+          max-width: auto;
+          margin: 0.5em;
+          }
+
+section {
+	padding: 0.5rem;
+	background-color: orange;
+	border-radius: 5px;
+}
