@@ -7,10 +7,23 @@ code {
 	font-size: 0.7rem;
 }
 
-/* The 'canvas' is contained by the body. Has Margins. */
-.canvas {
+/* The 'container' is contained by the body. Has Margins. */
+/* 
+	Look up CSS3 Flex properties! 'flex' is relative to other
+	flexbox items.
+*/
+.container {
+	display: -webkit-flex;
+  	display: flex;
 	max-width: 100%;
 	margin: 0px auto;
+
+	flex-wrap: wrap;
+}
+
+.flex-column {
+ 	-webkit-flex: 1;
+	flex: 1;
 }
 
 body {
@@ -30,12 +43,27 @@ nav a {
 }
 
 .topbar {
-	background-color: #DBD6D6;
+	/*background-color: #DBD6D6;*/
+	background-color: #333;
+	box-shadow: 0 0.3rem 0.1rem #CCC;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	padding: 0.2rem;
+	z-index: 999;
+}
+
+.topbar .container {
+	height: 2rem;
+	align-items: center;
+	-webkit-justify-content: space-around; /* Safari */
+	justify-content: space-around;
+}
+
+.top-nav-button {
+	-webkit-flex: 1;
+	flex: 1;
 }
 
 article {
@@ -172,6 +200,10 @@ figcaption {
 }
 
 /* Some Fancy Shit (tm)*/
+figure.fancy img {
+	max-width: 100%;
+}
+
 figure.fancy {
     display: block; 
     position: relative; 
@@ -256,7 +288,8 @@ input, textarea{
 }
 
 @media (min-width: 40em) {
-	.canvas {
+	.container {
 		max-width: 75%;
+		margin: auto;
 	}
 }
