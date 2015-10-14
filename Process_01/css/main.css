@@ -7,17 +7,30 @@ code {
 	font-size: 0.7rem;
 }
 
-/* The 'canvas' is contained by the body. Has Margins. */
-.canvas {
+/* The 'container' is contained by the body. Has Margins. */
+/* 
+	Look up CSS3 Flex properties! 'flex' is relative to other
+	flexbox items.
+*/
+.container {
+	display: -webkit-flex;
+  	display: flex;
 	max-width: 100%;
 	margin: 0px auto;
+
+	flex-wrap: wrap;
+}
+
+.flex-column {
+ 	-webkit-flex: 1;
+	flex: 1;
 }
 
 body {
 	font-family: Open Sans, Verdana, sans-serif;
 	font-size: 1em; 
 	color: black;
-	padding: 1em;
+	/*padding: 1em;*/
 }
 
 /* Navigation */
@@ -29,13 +42,99 @@ nav a {
 	width: 100%;
 }
 
-.topbar {
+.toplink {
+	color: #11151B;
+}
+
+.toplink.active {
+	color: #E94B69;
+}
+
+/* Hiding Menus */
+.topbar .container nav ul {
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+.topbar .container nav ul a {
+	display: block;
+	line-height: 2rem;
+	padding:0 1rem;
+	margin: 0 2rem 0 2rem;
+}
+
+.topbar .container nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+.topbar .container nav ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+
+	transition: 0.5s;
+}
+
+.topbar .container nav ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:2rem;
+	padding: 0;
+}
+
+.topbar .container nav ul ul li {
+/*	float: none;*/
+	width: 7rem;
+	float: none;
+}
+
+.topbar .container nav ul li:hover,
+.topbar .container nav ul li:focus {
 	background-color: #DBD6D6;
+}
+
+.topbar .container nav ul ul a {
+	line-height:120%;
+	padding: 0.7rem 1rem;
+	margin: 0;
+}
+
+.topbar .container nav ul li:hover > ul {
+	display: block;
+	color: #E94B69;
+	background-color: #DBD6D6;
+}
+
+.topbar {
+	/*background-color: #DBD6D6;*/
+	background-color: #f1f1f1;
+	box-shadow: 0 0.3rem 0.1rem rgba(200, 200, 200, 0.2);
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	padding: 0.2rem;
+	z-index: 999;
+}
+
+.topbar .container {
+	height: 2rem;
+ 	align-items: center;
+	-webkit-justify-content: space-around; /* Safari */
+	justify-content: space-around;
+}
+.topbar .container a {
+	margin: 2rem;
+}
+
+.top-nav-button {
+	-webkit-flex: 1;
+	flex: 1;
 }
 
 article {
@@ -100,10 +199,47 @@ article {
 	color: white;
 }
 
+/*Hero image and text*/
+.container-header{
+    text-align: center;
+    align-item: center;
+    text-colour: white;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+    background-image: url("http://data.hdwallpapers.im/outer_space_planets_digital_art_artwork_wide_mobile.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+h1.hero{
+	font-size: 4rem; 
+	font-weight: lighter;
+	letter-spacing: 0.005em;
+	color: #FFFFFF;
+	line-height: auto;
+}
+h3.hero {
+	font-weight: lighter;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	font-style: italic;
+	color: #FFFFFF;
+	line-height: 0.25rem;
+}
+
+.container-footer{
+	text-align: left;
+    background-color: gray;
+}
+
+
 /* Headers, m'boy! HEADERS! */
 h1 {
 	font-size: 3rem; 
-	font-weight: bolder;
+	font-weight: lighter;
 	margin-bottom: 0.5rem;
 	margin-top: 0.5rem;
 	letter-spacing: 0.005em;
@@ -115,9 +251,7 @@ h1.heading{
 	/*margin-top: 4rem;*/
 	letter-spacing: 0.005em;
 	color: #E94B69;
-
 }
-
 
 h2 {
 	font-weight: normal;
@@ -172,6 +306,10 @@ figcaption {
 }
 
 /* Some Fancy Shit (tm)*/
+figure.fancy img {
+	max-width: 100%;
+}
+
 figure.fancy {
     display: block; 
     position: relative; 
@@ -256,7 +394,8 @@ input, textarea{
 }
 
 @media (min-width: 40em) {
-	.canvas {
+	.container {
 		max-width: 75%;
+		margin: auto;
 	}
 }
