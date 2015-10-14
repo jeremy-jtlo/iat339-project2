@@ -45,7 +45,7 @@ nav a {
 .topbar {
 	/*background-color: #DBD6D6;*/
 	background-color: #f1f1f1;
-	box-shadow: 0 0.3rem 0.1rem #CCC;
+	box-shadow: 0 0.3rem 0.1rem rgba(200, 200, 200, 0.2);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -171,7 +171,7 @@ h3.hero {
 /* Headers, m'boy! HEADERS! */
 h1 {
 	font-size: 3rem; 
-	font-weight: bolder;
+	font-weight: lighter;
 	margin-bottom: 0.5rem;
 	margin-top: 0.5rem;
 	letter-spacing: 0.005em;
