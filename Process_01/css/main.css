@@ -42,6 +42,74 @@ nav a {
 	width: 100%;
 }
 
+.toplink {
+	color: #11151B;
+}
+
+.toplink.active {
+	color: #E94B69;
+}
+
+/* Hiding Menus */
+.topbar .container nav ul {
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+.topbar .container nav ul a {
+	display: block;
+	line-height: 2rem;
+	padding:0 1rem;
+	margin: 0 2rem 0 2rem;
+}
+
+.topbar .container nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+.topbar .container nav ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+
+	transition: 0.5s;
+}
+
+.topbar .container nav ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:2rem;
+	padding: 0;
+}
+
+.topbar .container nav ul ul li {
+/*	float: none;*/
+	width: 7rem;
+	float: none;
+}
+
+.topbar .container nav ul li:hover,
+.topbar .container nav ul li:focus {
+	background-color: #DBD6D6;
+}
+
+.topbar .container nav ul ul a {
+	line-height:120%;
+	padding: 0.7rem 1rem;
+	margin: 0;
+}
+
+.topbar .container nav ul li:hover > ul {
+	display: block;
+	color: #E94B69;
+	background-color: #DBD6D6;
+}
+
 .topbar {
 	/*background-color: #DBD6D6;*/
 	background-color: #f1f1f1;
