@@ -259,6 +259,7 @@ h2 {
 	letter-spacing: 0.005em;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+	color: #E94B69;
 }
 
 /*for header dividers*/
@@ -284,6 +285,7 @@ p, ul, ol {
 	line-height: 1.3em; 
 	text-align: left;
 	font-weight: normal;
+	color: #4c4c4c;
 }
 
 /* Standard Image/Figure Code */
@@ -385,12 +387,58 @@ p.colour-block{
 	color: #FFFFFF;
 }
 
-input, textarea{
-	border-color:#DBD6D6;
-	border-style: solid;
-	border-radius: 0.3em;
+input{
+	border: 0;
+	border-bottom:solid 2px #E94B69;
+	outline: none;
+	background-color: transparent;
 	padding: 0.25em;
 	width: 40%;
+	margin-top: 0.5rem;
+	display: block;
+	outline-style: 1px;
+	color: #700C2A;
+}
+
+input:focus{
+	border: 0;
+	border-bottom:solid 2px #700C2A;
+	outline: none;
+	background-color: transparent;
+	padding: 0.25em;
+	width: 40%;
+	margin-top: 0.5rem;
+	display: block;
+	outline-style: 1px;
+}
+
+::-webkit-input-placeholder {
+   color: #4c4c4c;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #4c4c4c;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #4c4c4c;  
+}
+
+:-ms-input-placeholder {  
+   color: #4c4c4c;
+}
+
+textarea{
+	border: 0;
+	outline: none;
+	background-color: #f9f9f9;
+	padding: 0.4em;
+	width: 40%;
+	margin-top: 0.5rem;
+	display: block;
+	outline-style: 1px;
+	height: 100px;
+
 }
 
 @media (min-width: 40em) {
