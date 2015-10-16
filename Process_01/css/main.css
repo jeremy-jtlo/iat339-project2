@@ -145,7 +145,15 @@ h3.hero {
 
 .container-footer{
 	text-align: left;
-    background-color: gray;
+    background-color: #e1e1e1;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer{
+	text-align: left;
+
 }
 
 
@@ -177,11 +185,11 @@ h2 {
 
 /*for header dividers*/
 h2.divider{
-	margin: 1em 0;
-	padding: 0.5em 0;
-	border-top: 0.06em solid #DBD6D6;
-	color: #700C2A;
-	font-weight: 600;
+	padding-right: 0.5em;
+	border-right: 1px solid #DBD6D6;
+	color: #384448;
+	line-height: 1em;
+	font-weight: bolder;
 }
 
 
@@ -262,6 +270,8 @@ a:active, a:hover, a:focus {
 	color: #E94B69; 
 	/*text-decoration: none;*/
 }
+
+
 
 
 /*Self Added*/
