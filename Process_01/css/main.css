@@ -78,8 +78,14 @@ article {
 	color: #FFFFFF;
 	border-bottom: solid 0.2rem #290812;
 }
+
 .button-nav.bg1 {
 	width: 8rem;
+}
+
+.button-nav.bg1.submit {
+	margin-top: 1rem;
+	width: 100%;
 }
 
 .button-nav.bg1:hover, .button-nav.bg1:active, .button-nav.bg1:focus {
@@ -294,13 +300,31 @@ p.colour-block{
 	color: #FFFFFF;
 }
 
+/* Form Mods */
+form {
+	max-width: 100%;
+}
+
+textarea{
+	border: 0;
+	outline: none;
+	background-color: #f9f9f9;
+	padding: 0.4em;
+	width: 100%;
+	margin-top: 0.5rem;
+	display: block;
+	outline-style: 1px;
+	height: 100px;
+
+}
+
 input{
 	border: 0;
 	border-bottom:solid 2px #E94B69;
 	outline: none;
 	background-color: transparent;
 	padding: 0.25em;
-	width: 40%;
+	width: 100%;
 	margin-top: 0.5rem;
 	display: block;
 	outline-style: 1px;
@@ -313,7 +337,6 @@ input:focus{
 	outline: none;
 	background-color: transparent;
 	padding: 0.25em;
-	width: 40%;
 	margin-top: 0.5rem;
 	display: block;
 	outline-style: 1px;
@@ -335,22 +358,15 @@ input:focus{
    color: #4c4c4c;
 }
 
-textarea{
-	border: 0;
-	outline: none;
-	background-color: #f9f9f9;
-	padding: 0.4em;
-	width: 40%;
-	margin-top: 0.5rem;
-	display: block;
-	outline-style: 1px;
-	height: 100px;
 
-}
 
 @media (min-width: 40em) {
 	.container {
 		max-width: 75%;
 		margin: auto;
+	}
+
+	input, textarea, .button-nav.bg1.submit {
+		width: 40%;
 	}
 }
