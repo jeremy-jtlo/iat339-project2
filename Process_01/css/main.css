@@ -153,9 +153,7 @@ h3.hero {
 }
 .footer{
 	text-align: left;
-
 }
-
 
 /* Headers, m'boy! HEADERS! */
 h1 {
@@ -181,6 +179,7 @@ h2 {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 	color: #E94B69;
+	line-height: 1.75rem;
 }
 
 /*for header dividers*/
@@ -190,6 +189,7 @@ h2.divider{
 	color: #384448;
 	line-height: 1em;
 	font-weight: bolder;
+	font-size: 1.5em;
 }
 
 
@@ -258,6 +258,7 @@ figcaption.fancy {
 a {
 	color: #E94B69; 
 	transition: 0.5s;
+	text-decoration: none;
 }
 
 
@@ -370,7 +371,7 @@ input:focus{
 
 
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
 	.container {
 		max-width: 75%;
 		margin: auto;
