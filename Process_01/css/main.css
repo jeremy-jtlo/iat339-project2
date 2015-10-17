@@ -185,7 +185,6 @@ h2 {
 /*for header dividers*/
 h2.divider{
 	padding-right: 0.5em;
-	border-right: 1px solid #DBD6D6;
 	color: #384448;
 	line-height: 1em;
 	font-weight: bolder;
