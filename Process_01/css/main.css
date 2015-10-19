@@ -119,13 +119,35 @@ article {
     text-colour: white;
     padding-top: 8rem;
     padding-bottom: 8rem;
-
-    background-image: url("http://data.hdwallpapers.im/outer_space_planets_digital_art_artwork_wide_mobile.jpg");
-    background-repeat: no-repeat;
-    max-width: 100%;
-    max-height: 100%;
-
+    text-shadow: 0px 0px 10px black;
 }
+
+#product-red{
+	background-image: url("../imgs/red-large.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    max-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+#product-blue{
+	background-image: url("../imgs/blue-large.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    max-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+#home-header{
+	background-image: url("../imgs/home-header.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    max-height: 400px;
+    background-size: cover;
+    background-position: top;
+    background-align:top;
+}
+
 
 h1.hero{
 	font-size: 4rem; 
