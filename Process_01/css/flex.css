@@ -169,3 +169,11 @@ section {
 #tab_nav li:focus div {
   display: block;
 }
+
+@media (max-width: 50em) {
+  .flex-column-5 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
