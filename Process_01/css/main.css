@@ -89,6 +89,7 @@ article {
 }
 
 .button-nav.bg1:hover, .button-nav.bg1:active, .button-nav.bg1:focus {
+	background-color: #E94B69;
 	border-bottom: solid 0.2rem #700C2A;
 	color: white;
 }
@@ -191,6 +192,10 @@ h1.heading{
 	/*margin-top: 4rem;*/
 	letter-spacing: 0.005em;
 	color: #E94B69;
+}
+
+.centered {
+	text-align: center;
 }
 
 h2 {
