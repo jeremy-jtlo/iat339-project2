@@ -60,33 +60,50 @@ article {
 	text-decoration: none;	
 	padding: 1em 1em;
 
-	-webkit-transition: background-color 0.5s;
+	/*-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
-	border-radius: 0.2rem;
+	border-radius: 0.2rem;*/
 }
 
 /* Styling for Button 1*/
 .active.button-nav.bg1 {
-	background-color: #E94B69;
-	border-bottom: solid 0.2rem #700C2A;
+	background-color: orange;
+/*	border-bottom: solid 0.2rem #700C2A;*/
 	font-weight: bold;
+	border-radius: 3px;
 }
 
 .button-nav.bg1, .button-nav.bg1:visited {
 	
 	background-color: #700C2A;
 	color: #FFFFFF;
-	border-bottom: solid 0.2rem #290812;
+	/*border-bottom: solid 0.2rem #290812;*/
 }
 
 .button-nav.bg1 {
-	width: 8rem;
+	width: 30%;
 }
 
 .button-nav.bg1.submit {
+
 	margin-top: 1rem;
-	width: 100%;
+	padding: 0.75rem;
+	width: 30%;
+	border: none;
+	border-radius: 0.25em;
+	background-color: #E94B69;
 }
+
+.button-nav.bg1.submit.blue {
+
+	margin-top: 1rem;
+	padding: 0.75rem;
+	width: 30%;
+	border: none;
+	border-radius: 0.25em;
+	background-color: #11151B;
+}
+
 
 .button-nav.bg1.submit.full {
 	width: 100%;
@@ -99,20 +116,9 @@ article {
 }
 
 
-/* Button 2 configuration */
-.button-nav.bg2, .button-nav.bg2:visited {
+.button-nav.bg1.submit.blue:hover, .button-nav.bg1.submit.blue:active, .button-nav.bg1.submit.blue:focus {
 	background-color: #384448;
-	color: #FFFFFF;
-	border-bottom: solid 0.2rem #11151B;
-}
-.button-nav.bg2 {
-	background-color:#384448;
-	width: 8rem;
-	border-bottom: solid 0.2rem #000;
-}
-
-.button-nav.bg2:hover, .button-nav.bg2:active, .button-nav.bg2:focus {
-	background-color: #11151B;
+/*	border-bottom: solid 0.2rem #700C2A;*/
 	color: white;
 }
 
@@ -367,7 +373,7 @@ input{
 	width: 100%;
 	margin-top: 0.5rem;
 	display: block;
-	outline-style: 1px;
+	outline-style: 0px;
 	color: #700C2A;
 }
 
