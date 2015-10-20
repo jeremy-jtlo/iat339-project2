@@ -167,6 +167,15 @@ article {
     background-position: 50% 45%;
     background-align:top;
 }
+#products{
+	background-image: url("../imgs/both.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    max-height: 400px;
+    background-size: cover;
+    background-position: 50% 45%;
+    background-align:top;
+}
 
 h1.hero{
 	font-size: 4rem; 
