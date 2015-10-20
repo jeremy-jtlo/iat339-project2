@@ -32,6 +32,16 @@ a.flex-item:hover{
   -webkit-transition: opacity.25s ease;
   -webkit-transition-timing-function: linear; /* Safari and Chrome */
   transition-timing-function: linear;
+
+  transition: 0.5s;
+}
+
+a.flex-item p {
+  transition: 0.5s;
+}
+
+a.flex-item:hover p {
+  color: #FFF;
 }
 
 #news {  
