@@ -366,12 +366,13 @@ textarea{
 
 input{
 	border: 0;
-	border-bottom:solid 2px #E94B69;
+	border-bottom:solid 2px #DBD6D6;;
 	outline: none;
 	background-color: transparent;
 	padding: 0.25em;
 	width: 100%;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	display: block;
 	outline-style: 0px;
 	color: #700C2A;
@@ -379,7 +380,7 @@ input{
 
 input:focus{
 	border: 0;
-	border-bottom:solid 2px #700C2A;
+	border-bottom:solid 2px #E94B69;
 	outline: none;
 	background-color: transparent;
 	padding: 0.25em;
