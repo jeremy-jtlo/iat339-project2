@@ -36,6 +36,18 @@
   font-size: 1em;
 }
 
+.flex-item-cart {
+  padding: 1em;
+  width: 270px;
+  height: auto;
+  flex-grow:1;
+  line-height: 1.25rem;
+  color: #384448;
+  font-weight: normal;
+  font-size: 1em;
+  display: inline;
+}
+
 
  /*general flex colums*/
 .flex-column-2 {
