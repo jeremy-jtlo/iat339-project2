@@ -27,7 +27,7 @@
 
 a.flex-item:hover{
   /*box-shadow: inset 0 0.2rem 1rem 0px rgba(0,0,0,0.26);*/
-   background:rgba(0,0,0,.75);
+   background:rgba(255, 224, 224,1);
   opacity:1;
   -webkit-transition: opacity.25s ease;
   -webkit-transition-timing-function: linear; /* Safari and Chrome */
@@ -36,8 +36,9 @@ a.flex-item:hover{
 
 #news {  
   font-weight:bolder;
-  color:rgba(255,255,255,.85);
+  color:#E94B69;
   font-size:1em;
+  text-align: right;
 }
 
 .flex-item {
