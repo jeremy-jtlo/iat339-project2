@@ -32,7 +32,6 @@ body {
 	font-family: Open Sans, Verdana, sans-serif;
 	font-size: 1em; 
 	color: black;
-	/*padding: 1em;*/
 }
 
 /* Navigation */
@@ -127,8 +126,8 @@ article {
     text-align: center;
     align-item: center;
     text-colour: white;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     text-shadow: 0px 0px 10px black;
 }
 
@@ -154,7 +153,7 @@ article {
     width: auto;
     max-height: 400px;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-align:top;
 }
 
@@ -164,7 +163,7 @@ article {
     width: auto;
     max-height: 400px;
     background-size: cover;
-    background-position: 50% 45%;
+    background-position: 50% 25%;
     background-align:top;
 }
 #products{
@@ -196,10 +195,13 @@ h3.hero {
 .container-footer{
 	text-align: left;
     background-color: #e1e1e1;
-    padding-left: 12.5%;
-    padding-right: 12.5%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 5rem;
+    bottom: 100%;
+    width: 100%
 }
 .footer{
 	text-align: left;
@@ -326,8 +328,6 @@ a:active, a:hover, a:focus {
 }
 
 
-
-
 /*Self Added*/
 
 /*for the colour palette boxes*/
@@ -384,7 +384,7 @@ textarea{
 
 input{
 	border: 0;
-	border-bottom:solid 2px #DBD6D6;;
+	border-bottom:solid 2px #DBD6D6;
 	outline: none;
 	background-color: transparent;
 	padding: 0.25em;
@@ -428,7 +428,7 @@ input:focus{
 
 @media (min-width: 50em) {
 	.container {
-		max-width: 75%;
+		max-width: 70%;
 		margin: auto;
 	}
 
