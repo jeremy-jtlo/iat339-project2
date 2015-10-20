@@ -60,31 +60,52 @@ article {
 	text-decoration: none;	
 	padding: 1em 1em;
 
-	-webkit-transition: background-color 0.5s;
+	/*-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
-	border-radius: 0.2rem;
+	border-radius: 0.2rem;*/
 }
 
 /* Styling for Button 1*/
 .active.button-nav.bg1 {
-	background-color: #E94B69;
-	border-bottom: solid 0.2rem #700C2A;
+	background-color: orange;
+/*	border-bottom: solid 0.2rem #700C2A;*/
 	font-weight: bold;
+	border-radius: 3px;
 }
 
 .button-nav.bg1, .button-nav.bg1:visited {
 	
 	background-color: #700C2A;
 	color: #FFFFFF;
-	border-bottom: solid 0.2rem #290812;
+	/*border-bottom: solid 0.2rem #290812;*/
 }
 
 .button-nav.bg1 {
-	width: 8rem;
+	width: 30%;
 }
 
 .button-nav.bg1.submit {
+
 	margin-top: 1rem;
+	padding: 0.75rem;
+	width: 30%;
+	border: none;
+	border-radius: 0.25em;
+	background-color: #E94B69;
+}
+
+.button-nav.bg1.submit.blue {
+
+	margin-top: 1rem;
+	padding: 0.75rem;
+	width: 30%;
+	border: none;
+	border-radius: 0.25em;
+	background-color: #11151B;
+}
+
+
+.button-nav.bg1.submit.full {
 	width: 100%;
 }
 
@@ -95,20 +116,9 @@ article {
 }
 
 
-/* Button 2 configuration */
-.button-nav.bg2, .button-nav.bg2:visited {
+.button-nav.bg1.submit.blue:hover, .button-nav.bg1.submit.blue:active, .button-nav.bg1.submit.blue:focus {
 	background-color: #384448;
-	color: #FFFFFF;
-	border-bottom: solid 0.2rem #11151B;
-}
-.button-nav.bg2 {
-	background-color:#384448;
-	width: 8rem;
-	border-bottom: solid 0.2rem #000;
-}
-
-.button-nav.bg2:hover, .button-nav.bg2:active, .button-nav.bg2:focus {
-	background-color: #11151B;
+/*	border-bottom: solid 0.2rem #700C2A;*/
 	color: white;
 }
 
@@ -119,13 +129,35 @@ article {
     text-colour: white;
     padding-top: 8rem;
     padding-bottom: 8rem;
-
-    background-image: url("http://data.hdwallpapers.im/outer_space_planets_digital_art_artwork_wide_mobile.jpg");
-    background-repeat: no-repeat;
-    max-width: 100%;
-    max-height: 100%;
-
+    text-shadow: 0px 0px 10px black;
 }
+
+#product-red{
+	background-image: url("../imgs/red-large.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    max-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+#product-blue{
+	background-image: url("../imgs/blue-large.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    max-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+#home-header{
+	background-image: url("../imgs/home-header.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    max-height: 400px;
+    background-size: cover;
+    background-position: top;
+    background-align:top;
+}
+
 
 h1.hero{
 	font-size: 4rem; 
@@ -145,9 +177,15 @@ h3.hero {
 
 .container-footer{
 	text-align: left;
-    background-color: gray;
+    background-color: #e1e1e1;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
+.footer{
+	text-align: left;
+}
 
 /* Headers, m'boy! HEADERS! */
 h1 {
@@ -166,6 +204,10 @@ h1.heading{
 	color: #E94B69;
 }
 
+.centered {
+	text-align: center;
+}
+
 h2 {
 	font-weight: normal;
 	font-size: 1.5rem; 
@@ -173,15 +215,16 @@ h2 {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 	color: #E94B69;
+	line-height: 1.75rem;
 }
 
 /*for header dividers*/
 h2.divider{
-	margin: 1em 0;
-	padding: 0.5em 0;
-	border-top: 0.06em solid #DBD6D6;
-	color: #700C2A;
-	font-weight: 600;
+	padding-right: 0.5em;
+	color: #384448;
+	line-height: 1em;
+	font-weight: bolder;
+	font-size: 1.5em;
 }
 
 
@@ -250,6 +293,7 @@ figcaption.fancy {
 a {
 	color: #E94B69; 
 	transition: 0.5s;
+	text-decoration: none;
 }
 
 
@@ -262,6 +306,8 @@ a:active, a:hover, a:focus {
 	color: #E94B69; 
 	/*text-decoration: none;*/
 }
+
+
 
 
 /*Self Added*/
@@ -308,7 +354,7 @@ form {
 textarea{
 	border: 0;
 	outline: none;
-	background-color: #f9f9f9;
+	background-color: #e1e1e1;
 	padding: 0.4em;
 	width: 100%;
 	margin-top: 0.5rem;
@@ -320,20 +366,21 @@ textarea{
 
 input{
 	border: 0;
-	border-bottom:solid 2px #E94B69;
+	border-bottom:solid 2px #DBD6D6;;
 	outline: none;
 	background-color: transparent;
 	padding: 0.25em;
 	width: 100%;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	display: block;
-	outline-style: 1px;
+	outline-style: 0px;
 	color: #700C2A;
 }
 
 input:focus{
 	border: 0;
-	border-bottom:solid 2px #700C2A;
+	border-bottom:solid 2px #E94B69;
 	outline: none;
 	background-color: transparent;
 	padding: 0.25em;
@@ -360,7 +407,7 @@ input:focus{
 
 
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
 	.container {
 		max-width: 75%;
 		margin: auto;
@@ -368,5 +415,9 @@ input:focus{
 
 	input, textarea, .button-nav.bg1.submit {
 		width: 40%;
+	}
+
+	.button-nav.bg1.submit.full {
+		width: 100%;
 	}
 }

@@ -51,7 +51,7 @@
 
 .topbar .container nav ul li:hover,
 .topbar .container nav ul li:focus {
-	background-color: #DBD6D6;
+	/*background-color: #DBD6D6;*/
 }
 
 .topbar .container nav ul ul a {
@@ -63,7 +63,7 @@
 .topbar .container nav ul li:hover > ul {
 	display: block;
 	color: #E94B69;
-	background-color: #DBD6D6;
+	background-color: #f1f1f1;
 }
 
 .topbar {
@@ -99,7 +99,7 @@
 }
 
 .mobile-menu {
-	border: 1px solid #DBD6D6;
+	border: 1px solid #f1f1f1;
 }
 
 
@@ -123,7 +123,7 @@
 	.topbar .container.mobile nav ul li:hover > ul {
 		display: block;
 		color: #E94B69;
-		background-color: #DBD6D6;
+		background-color: #f1f1f1;
 		width: 100%;
 	}
 
@@ -137,6 +137,6 @@
 
 	.topbar .container.mobile .mobile-menu li.mobile-li:hover,
 	.topbar .container.mobile .mobile-menu li.mobile-li:focus {
-		background-color: #384448;
+		/*background-color: #384448;*/
 	}
 }
