@@ -92,7 +92,7 @@ a.flex-item:hover p {
           min-width: 40%;
           }
 .flex-column-5 {
-          max-width: 50%;
+          /*max-width: 50%;*/
           min-width: 50%;
           }         
 .flex-column-6 {
