@@ -24,7 +24,7 @@ code {
 }
 
 .container.first {
-	margin-top: 2rem;
+	margin-top: 4rem;
 }
 
 .flex-column {
@@ -35,7 +35,7 @@ code {
 body {
 	font-family: Open Sans, Verdana, sans-serif;
 	font-size: 1em; 
-	color: black;
+	color: #222;
 }
 
 /* Navigation */
@@ -102,6 +102,7 @@ article {
 	border: none;
 	border-radius: 0.25em;
 	background-color: #11151B;
+	font-weight: bolder;
 
 	border-bottom: solid 0.2rem #000;
 }
@@ -212,7 +213,7 @@ h3.hero {
 
 /* Headers, m'boy! HEADERS! */
 h1 {
-	font-size: 3rem; 
+	font-size: 2rem; 
 	font-weight: lighter;
 	margin-bottom: 0.5rem;
 	margin-top: 0.5rem;
@@ -231,6 +232,10 @@ h1.heading{
 	text-align: center;
 }
 
+.grey {
+	color: #DBD6D6;
+}
+
 h2 {
 	font-weight: normal;
 	font-size: 1.5rem; 
@@ -239,6 +244,18 @@ h2 {
 	margin-bottom: 0.5rem;
 	color: #E94B69;
 	line-height: 1.75rem;
+}
+
+h2.dark-header {
+	color: #222;
+}
+
+h2.payform {
+	margin-bottom: 2rem;
+}
+
+.container.first h2 {
+	font-size: 2rem;
 }
 
 /*for header dividers*/
@@ -255,7 +272,8 @@ h3 {
 	font-weight: lighter;
 	font-size: 1.25rem;
 	margin-bottom: 0.5rem;
-	font-style: italic;
+	color: #555;
+	/*font-style: italic;*/
 }
 
 /* Body Texts and Lists*/
@@ -265,6 +283,10 @@ p, ul, ol {
 	text-align: left;
 	font-weight: normal;
 	color: #4c4c4c;
+}
+
+p.align-right {
+	text-align: right;
 }
 
 /* Standard Image/Figure Code */
@@ -312,9 +334,9 @@ figcaption.fancy {
     font-style: normal;
 }
 
-
+/* Standard Links */
 a {
-	color: #E94B69; 
+	color: #384448; 
 	transition: 0.5s;
 	text-decoration: none;
 }
@@ -326,10 +348,19 @@ a:visited {
 
 
 a:active, a:hover, a:focus {
-	color: #E94B69; 
-	/*text-decoration: none;*/
+	color: #E94B69;
 }
 
+/* Text Decorations (bold/italic) */
+strong {
+	font-weight: 400;
+	font-size: 1.2em;
+}
+
+/* Adding to Cart */
+#add-red-pills, #add-blue-pills {
+	margin: 2rem auto;
+}
 
 /*Self Added*/
 
@@ -441,5 +472,9 @@ input:focus{
 
 	.button-nav.bg1.submit.full {
 		width: 100%;
+	}
+
+	h1 {
+		font-size: 3rem;
 	}
 }

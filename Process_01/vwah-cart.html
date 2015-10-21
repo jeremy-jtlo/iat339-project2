@@ -48,76 +48,89 @@
         </div> <!-- end of .topbar -->
         
         <div class="container first">
-            <br>
-            <br>
-        <section class="flex-container">
-            <section class="flex-item-cart"> 
-                <h3>Red Pill</h3> 
-                <img src="http://thumbs.dreamstime.com/m/single-red-pill-16280415.jpg">
+            <h2>Your Cart Items</h2>
+        </div>
+
+        <div class="container">
+
+            <section class="flex-container">
+                <section class="flex-item-cart"> 
+                    <h2 class="dark-header">Red Pill</h2> 
+                    <img src="http://thumbs.dreamstime.com/m/single-red-pill-16280415.jpg">
+                </section>
+                <section class="flex-item-cart">  
+                    <h3>Quantity:</h3>  2 Red Pills @ <strong>$765.43</strong> each
+                    <h3>Total:</h3> <strong>$1530.86</strong>
+                </section>
             </section>
-            <section class="flex-item-cart">  
-                <h3>Quantity:</h3>  2 Red Pills @ $765.43 each
-                <h3>Total:</h3> $1530.86
+                <!-- end of red pill item -->
+            <section class="flex-container">
+                <section class="flex-item-cart"> 
+                    <h2 class="dark-header">Blue Pill</h2> 
+                    <img src="http://thumbs.dreamstime.com/m/single-red-pill-16280415.jpg">
+                </section>
+                <section class="flex-item-cart">  
+                    <h3>Quantity:</h3>  2 Blue Pills @ <strong>$456.78</strong> each
+                    <h3>Total:</h3> <strong>$913.56</strong>
+                </section>
+     
+                <!-- end of blue pill item -->
+                <!-- Grand Total with tax, tip and shipping -->
             </section>
-        </section>
-            <!-- end of red pill item -->
-        <section class="flex-container">
-            <section class="flex-item-cart"> 
-                <h3>Blue Pill</h3> 
-                <img src="http://thumbs.dreamstime.com/m/single-red-pill-16280415.jpg">
+
+            <section class="flex-container cart">
+                <div class="flex-column-5">
+                    <h3>Taxes:</h3> @ 10%
+                </div>
+                <div class="flex-column-5">
+                    <h3>Handling Fee:</h3> @ $50.00
+                </div>
+                <div class="flex-column-5">
+                    <h3>Shipping:</h3> @ $45.00
+                </div>
+                <div class="flex-column-5">
+                    <h3><strong>Grand Total:</strong></h3> <strong>$2783.86</strong>
+                </div>
             </section>
-            <section class="flex-item-cart">  
-                <h3>Quantity:</h3>  2 Blue Pills @ $456.78 each
-                <h3>Total:</h3> $913.56
-            </section>
- 
-            <!-- end of blue pill item -->
-            <!-- Grand Total with tax, tip and shipping -->
-        </section>
 
             <section class="flex-column-full">
-                <h3>Taxes:</h3> @ 10%
-                <h3>Handling Fee:</h3> @ $50.00
-                <h3>Shipping:</h3> @ $45.00
-                <h3><strong>Grand Total:</strong></h3> $2783.86
+            
+            <form>
+                <h2 class="payform">Payment Information</h2>
+                <input type="plain" name="firstname" placeholder="First Name"></input>
+                <input type="text" name="lastname" placeholder="Last Name"></input>
+                <input type="text" name="email" placeholder="Email Address"></input>
+                <br>
+                <h2 class="payform">Shipping Address</h2>
+                <input type="text" name="address" placeholder="Street Address"></input>
+                <input type="text" name="State" placeholder="State/Province"></input>
+                <input type="text" name="Country" placeholder="Country"></input>
+                <input type="text" name="Postal" placeholder="Postal"></input>
+                <br>
+                <h2 class="payform">Billing</h2>
+                <input type="text" name="address" placeholder="Street Address"></input>
+                <input type="text" name="State" placeholder="State/Province"></input>
+                <input type="text" name="Country" placeholder="Country"></input>
+                <input type="text" name="Postal" placeholder="Postal"></input>
+                <br>
+                <input type="text" name="name" placeholder="Cardholder Name"></input>
+                <input type="text" name="CC" placeholder="Credit Card"></input>
+                <input type="text" name="email" placeholder="Email Address"></input>
+            </form>
+            <br>
+            <h2>Confirm Order</h2>
+            <p>
+                Quantity:  2 Red Pills @ $765.43 each Total: $1530.86<br>
+                Quantity: 2 Blue Pills @ $456.78 each Total: $913.56<br>
+                Taxes: 10%<br>
+                Handling Fee: $50.00<br>
+                Shipping: $45.00<br>
+                <strong>Grand Total: $2783.86</strong>
+            </p>
+
+            <a href="vwah-processing.html" class="button-nav bg1 submit">Place Order</a>
+            <p><em>Everything is finalized once the order has been placed.</em></p>
             </section>
-
-        <section class="flex-column-full">
-        <form>
-            <input type="plain" name="firstname" placeholder="First Name"></input>
-            <input type="text" name="lastname" placeholder="Last Name"></input>
-            <input type="text" name="email" placeholder="Email Address"></input>
-            <br>
-            <h2>Shipping Address</h2>
-            <input type="text" name="address" placeholder="Street Address"></input>
-            <input type="text" name="State" placeholder="State/Province"></input>
-            <input type="text" name="Country" placeholder="Country"></input>
-            <input type="text" name="Postal" placeholder="Postal"></input>
-            <br>
-            <h2>Billing Address</h2>
-            <input type="text" name="address" placeholder="Street Address"></input>
-            <input type="text" name="State" placeholder="State/Province"></input>
-            <input type="text" name="Country" placeholder="Country"></input>
-            <input type="text" name="Postal" placeholder="Postal"></input>
-            <br>
-            <input type="text" name="name" placeholder="Cardholder Name"></input>
-            <input type="text" name="CC" placeholder="Credit Card"></input>
-            <input type="text" name="email" placeholder="Email Address"></input>
-        </form>
-        <br>
-        <h2>Confirm Order</h2>
-        <p>
-            Quantity:  2 Red Pills @ $765.43 each Total: $1530.86<br>
-            Quantity: 2 Blue Pills @ $456.78 each Total: $913.56<br>
-            Taxes: 10%<br>
-            Handling Fee: $50.00<br>
-            Shipping: $45.00<br>
-            <strong>Grand Total: $2783.86</strong>
-        </p>
-
-        <button class="button-nav bg1 submit">Place Order</button>
-        <p><em>Everything is finalized once the order has been placed.</em></p>
-    </section>
         </div>
 
         </div>
