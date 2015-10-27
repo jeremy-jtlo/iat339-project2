@@ -132,7 +132,15 @@ article {
     text-colour: white;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    text-shadow: 0px 0px 10px black;
+ }
+
+.container-header-alt{
+    text-align: center;
+    align-item: center;
+    text-colour: white;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-shadow: 0px 0px 10px white;
 }
 
 #product-red{
@@ -182,20 +190,35 @@ article {
 
 h1.hero{
 	font-size: 4rem; 
-	font-weight: lighter;
+	font-weight: normal;
 	letter-spacing: 0.005em;
-	color: #FFFFFF;
+	color: #E94B69;;
 	line-height: auto;
 }
 h3.hero {
-	font-weight: lighter;
+	font-weight: normal;
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 	font-style: italic;
-	color: #FFFFFF;
+	color: white;
 	line-height: 0.25rem;
 }
 
+h1.hero-alt{
+	font-size: 4rem; 
+	font-weight: normal;
+	letter-spacing: 0.005em;
+	color: #11151B;
+	line-height: auto;
+}
+h3.hero-alt {
+	font-weight: normal;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	font-style: italic;
+	color: #11151B;
+	line-height: 0.25rem;
+}
 .container-footer{
 	text-align: left;
     background-color: #e1e1e1;
@@ -467,7 +490,7 @@ input:focus{
 	}
 
 	input, textarea, .button-nav.bg1.submit {
-		width: 70%;
+		width: 50%;
 	}
 
 	.button-nav.bg1.submit.full {
