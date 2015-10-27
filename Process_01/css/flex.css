@@ -28,7 +28,7 @@
 }
 
 .flex-container.cart {
-  margin: 2rem 0;
+  margin: 0rem 0;
   text-align: center;
 }
 
@@ -65,9 +65,9 @@ a.flex-item:hover p {
 
 .flex-item-cart {
   padding: 1em;
-  width: 270px;
+  width: auto;
   height: auto;
-  flex-grow:1;
+  flex-grow:0;
   line-height: 1.25rem;
   color: #384448;
   font-weight: normal;
@@ -75,6 +75,29 @@ a.flex-item:hover p {
   display: inline;
 }
 
+.flex-item-img {
+  padding: 1em;
+  height: auto;
+  flex-grow:0;
+  line-height: 1.25rem;
+  color: #384448;
+  font-weight: normal;
+  font-size: 1em;
+  display: inline;
+}
+
+.flex-item-total {
+  padding: 1em;
+  width: 480px;
+  height: auto;
+  flex-grow:0;
+  line-height: 1.25rem;
+  color: #384448;
+  font-weight: normal;
+  font-size: 1em;
+  display: inline;
+  text-align: right;
+}
 
  /*general flex colums*/
 .flex-column-2 {
@@ -104,181 +127,6 @@ a.flex-item:hover p {
 
 section {
 	padding: 1rem;
-}
-
-
-
-
-
-.tabmenu {
-   height: 550px;
-   position: relative;
-   width: 100%;
-   overflow: auto;
-}
-
-.tabmenu>div {
-   display: inline;
-}
-
-.tabmenu>div>a {
-   margin-left: -1px;
-   position: relative;
-   left: 1px;
-   text-decoration: none;
-   color: black;
-   background: white;
-   display: block;
-   float: left;
-   padding: 5px 10px;
-   border: 1px solid #ccc;
-   border-bottom: 1px solid white;
-}
-
-.tabmenu>div:not(:target)>a {
-   border-bottom: 0;
-   background: #384448;
-   color: white;
-}
-
-.tabmenu>div:target>a {
-   background: #700C2A;
-   color: white;
-}
-
-.tabmenu>div>div {
-   background: white;
-   z-index: -2;
-   left: 0;
-   top: 30px;
-   bottom: 0;
-   right: 0;
-   padding: 1rem;
-   border: 1px solid #ccc;
-}
-
-.tabmenu>div:not(:target)>div {
-   position: absolute;
-}
-
-.tabmenu>div:target>div {
-   position: absolute;
-   z-index: 1;
-}
-
-------
-
-#tab_nav {
-  position: relative;
-  overflow: scroll;
-  margin: 0 auto;
-  margin-top: 1rem;
-  word-spacing: -5px;
-  width: 100%;
-  height: 300px;
-  margin-bottom: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  letter-spacing: normal;
-}
-
-#tab_nav ul {
-  margin: 0 auto;
-  padding: 0;
-  display: inline-block;
-  width: 100%;
-  letter-spacing: normal;
-}
-
-#tab_nav li {
-  background: #DBD6D6;
-  color: #384448;
-  min-width: auto;
-  list-style: none;
-  display: inline-block;
-  margin: 0 auto;
-  padding: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  letter-spacing: normal;
-  box-shadow: inset 0 -50px 50px -50px rgba(0, 0, 0, 0.2), 
-    inset 1px 0 0 rgba(250, 255, 255, .1), 
-    inset -1px 0 0 rgba(0, 0, 0, .5);
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: normal;
-}
-
-#tab_nav li:first-of-type {
-  box-shadow: inset 0 -50px 50px -50px rgba(0, 0, 0, 0.2), 
-    inset -1px 0 0 rgba(0, 0, 0, .5);
-}
-
-#tab_nav li:last-of-type {
-  box-shadow: inset 0 -50px 50px -50px rgba(0, 0, 0, 0.2), 
-    inset 1px 0 0 rgba(250, 255, 255, .1);
-}
-
-#tab_nav li:hover {
-  background: #384448;
-  color: white;
-}
-
-#tab_nav li:active {
-  background: #11151B;
-}
-
-#tab_nav li span {
-  float: right;
-  font-weight: normal;
-  display: none;
-  letter-spacing: normal;
-}
-
-#tab_nav li:hover span {
-  display: block;
-}
-
-#tab_nav div {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  padding: 25px;
-  color: black;
-  font-weight: normal;
-  font-size: 1em;
-  letter-spacing: normal;
-  word-spacing: normal;
-}
-
-#tab_nav li div {
-  display: none;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  padding: 25px;
-  letter-spacing: normal;
-  word-spacing: normal;
-}
-
-#tab_nav li:focus {
-  outline: none;
-  background: #11151B;
-  color: white;
-  box-shadow: 0 -5px 0 white;
-  font-weight: normal;
-  font-size: 1em;
-  letter-spacing: normal;
-}
-
-#tab_nav li:focus div {
-  display: block;
 }
 
 @media (max-width: 50em) {
