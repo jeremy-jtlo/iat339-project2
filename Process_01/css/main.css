@@ -211,6 +211,14 @@ h1.hero-alt{
 	color: #11151B;
 	line-height: auto;
 }
+h1.hero-alt-white{
+	font-size: 4rem; 
+	font-weight: normal;
+	letter-spacing: 0.005em;
+	color: white;
+	line-height: auto;
+}
+
 h3.hero-alt {
 	font-weight: normal;
 	font-size: 1.5rem;
@@ -438,6 +446,21 @@ textarea{
 	height: 100px;
 
 }
+
+#FillForm {
+	border: solid 1px;
+	outline: thin;
+	background-color: transparent;
+	padding: 0.5em;
+	width: 20%;
+	height: 45px;
+	margin: 1em;
+	display: block;
+	outline-style: 0px;
+	color: #700C2A;
+	display: inline-block;
+}
+
 
 input{
 	border: 0;

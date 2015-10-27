@@ -109,6 +109,65 @@ section {
 
 
 
+
+.tabmenu {
+   height: 550px;
+   position: relative;
+   width: 100%;
+   overflow: auto;
+}
+
+.tabmenu>div {
+   display: inline;
+}
+
+.tabmenu>div>a {
+   margin-left: -1px;
+   position: relative;
+   left: 1px;
+   text-decoration: none;
+   color: black;
+   background: white;
+   display: block;
+   float: left;
+   padding: 5px 10px;
+   border: 1px solid #ccc;
+   border-bottom: 1px solid white;
+}
+
+.tabmenu>div:not(:target)>a {
+   border-bottom: 0;
+   background: #384448;
+   color: white;
+}
+
+.tabmenu>div:target>a {
+   background: #700C2A;
+   color: white;
+}
+
+.tabmenu>div>div {
+   background: white;
+   z-index: -2;
+   left: 0;
+   top: 30px;
+   bottom: 0;
+   right: 0;
+   padding: 1rem;
+   border: 1px solid #ccc;
+}
+
+.tabmenu>div:not(:target)>div {
+   position: absolute;
+}
+
+.tabmenu>div:target>div {
+   position: absolute;
+   z-index: 1;
+}
+
+------
+
 #tab_nav {
   position: relative;
   overflow: scroll;
