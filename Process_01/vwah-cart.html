@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Your RED Cart</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -14,7 +15,7 @@
             <div class="container">
                 <nav>
                     <ul>
-                        <li><a href="vwah-flexbox-test.html" class="toplink active">Home</a></li>
+                        <li><a href="vwah-flexbox-test.html" class="toplink">Home</a></li>
                         <li>
                         <a href="vwah-products.html" class="toplink">Products</a>
                             <ul>
@@ -23,7 +24,7 @@
                             </ul>
                         </li>
                         <li><a href="vwah-about.html" class="toplink">About</a></li>
-                        <li><a href="vwah-cart.html" class="toplink">Cart</a></li>
+                        <li><a href="vwah-cart.html" class="toplink active">Cart</a></li>
                     </ul>
                 </nav>
             </div> <!-- end of .container -->
@@ -34,12 +35,12 @@
                         <li class="mobile-menu">
                             <a href="#">Menu</a>
                             <ul>
-                                <li class="mobile-li"><a href="vwah-flexbox-test.html" class="toplink active">Home</a></li>
+                                <li class="mobile-li"><a href="vwah-flexbox-test.html" class="toplink">Home</a></li>
                                 <li class="mobile-li">
                                 <a href="vwah-products.html" class="toplink">Products</a>
                                 </li>
                                 <li class="mobile-li"><a href="vwah-about.html" class="toplink">About</a></li>
-                                <li class="mobile-li"><a href="vwah-cart.html" class="toplink">Cart</a></li>
+                                <li class="mobile-li"><a href="vwah-cart.html" class="toplink active">Cart</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -47,44 +48,103 @@
             </div> <!-- end of .container.mobile -->
         </div> <!-- end of .topbar -->
         
+        <div class="container first">
+            <h2>Your Cart Items</h2>
+        </div>
+
         <div class="container">
+
+            <section class="flex-container">
+               <section class="flex-item-img">
+                <img src="imgs/red-small.jpg" alt="red pill">
+                </section>
+                <section class="flex-item-cart">  
+                    <h3>Quantity:</h3>  2 Red Pills @ <strong>$765.43</strong> each
+                </section>
+                <section class="flex-item-cart">
+                     <h3>Total:</h3> <strong>$1530.86</strong>
+                </section>
+            </section>
+                <!-- end of red pill item -->
+            <section class="flex-container">
+                <section class="flex-item-img">
+                    <img src="imgs/blue-small.jpg" alt="blue pill">
+                </section>
+                <section class="flex-item-cart">  
+                    <h3>Quantity:</h3>  2 Blue Pills @ <strong>$456.78</strong> each
+                </section>
+                <section class="flex-item-cart">
+                    <h3>Total:</h3> <strong>$913.56</strong>
+                </section>
+            </section>
+
+
+            <section class="flex-container">
+                <div class="flex-item-total">
+                    <h3>Taxes:</h3> 10%
+                    <h3>Handling Fee:</h3> $50.00
+                    <h3>Shipping:</h3> $45.00
+                    <h3><strong>Grand Total:</strong></h3> <strong>$2783.86</strong>
+                </div>
+            </section>
+
             <section class="flex-column-full">
+            
+            <form>
+                <h2 class="payform">Payment Information</h2>
+                <input type="plain" name="firstname" placeholder="First Name"></input>
+                <input type="text" name="lastname" placeholder="Last Name"></input>
+                <input type="text" name="email" placeholder="Email Address"></input>
                 <br>
-                <h1>Your Cart</h1>
-            </section>
-            <section class="flex-column-5"> 
-                <h3>images on the left</h3> 
-                <p>A catch phrase for the those who care</p>
-            </section>
+                <h2 class="payform">Shipping Address</h2>
+                <input type="text" name="address" placeholder="Street Address"></input>
+                <input type="text" name="State" placeholder="State/Province"></input>
+                <input type="text" name="Country" placeholder="Country"></input>
+                <input type="text" name="Postal" placeholder="Postal"></input>
+                <br>
+                <h2 class="payform">Billing</h2>
+                <input type="text" name="address" placeholder="Street Address"></input>
+                <input type="text" name="State" placeholder="State/Province"></input>
+                <input type="text" name="Country" placeholder="Country"></input>
+                <input type="text" name="Postal" placeholder="Postal"></input>
+                <br>
+                <input type="text" name="name" placeholder="Cardholder Name"></input>
+                <input type="text" name="CC" placeholder="Credit Card"></input>
+                <input type="text" name="email" placeholder="Email Address"></input>
+            </form>
+            <br>
+            <h2>Confirm Order</h2>
+            <p>
+                Quantity:  2 Red Pills @ $765.43 each Total: $1530.86<br>
+                Quantity: 2 Blue Pills @ $456.78 each Total: $913.56<br>
+                Taxes: 10%<br>
+                Handling Fee: $50.00<br>
+                Shipping: $45.00<br>
+                <strong>Grand Total: $2783.86</strong>
+            </p>
 
-            <section class="flex-column-5">  
-                <h3>costs on the right</h3>
-                <p>se who care</p>
+            <a href="vwah-processing.html" class="button-nav bg1 submit">Place Order</a>
+            <p><em>Everything is finalized once the order has been placed.</em></p>
             </section>
-        <section class="flex-column-full">
-        <form>
-            <input type="plain" name="firstname" placeholder="First Name"></input>
-            <input type="text" name="lastname" placeholder="Last Name"></input>
-            <input type="text" name="email" placeholder="Email Address"></input>
-            <br>
-            <h2>Shipping Address</h2>
-            <input type="text" name="address" placeholder="Street Address"></input>
-            <input type="text" name="State" placeholder="State/Province"></input>
-            <input type="text" name="Country" placeholder="Country"></input>
-            <input type="text" name="Postal" placeholder="Postal"></input>
-            <br>
-            <h2>Billing Address</h2>
-            <input type="text" name="name" placeholder="Cardholder Name"></input>
-            <input type="text" name="CC" placeholder="Credit Card"></input>
-            <input type="text" name="email" placeholder="Email Address"></input>
-        </form>
-        <button class="button-nav bg1 submit">Pay Now</button>
-    </section>
         </div>
 
-        <div class="container-footer">
-            <h4>Footer Goes here</h4>
-            <p>Go and contact us here at 310-1010 and ask for Pepperoni</p>
         </div>
+         <div class="container-footer">
+            <p class="footer">Red is a publically traded company. For more information, please Google us!</p>
+            <section class="flex-column-4">
+            <h2>Quick Links</h2>
+            <a href="vwah-flexbox-test.html"> Home</a><br>
+            <a href="vwah-products.html">Products</a><br>
+            <a href="vwah-red.html">Red Pill</a><br>
+            <a href="vwah-blue.html">Blue Pill</a><br>
+            <a href="vwah-about.html">About</a><br>
+
+            <h2>Headquaters</h2>
+            <p>250 - 13450 – 102nd Avenue<br>
+            Surrey, BC<br>
+            V3T 0A3<br>
+            (778) 782-3111</p>
+            </section>
+        </div> 
     </body>
 </html>
