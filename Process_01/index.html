@@ -31,18 +31,6 @@
 				</nav>
 
         <nav>
-          <h2>User-Flows Wireframes</h2>
-          <ul>
-            <li>
-              <a href="smartwatch/home.html">Smartwatch</a>
-            </li>
-            <li>
-              <a href="smart-phone/home.html">Smartphone</a>
-            </li>
-            <li>
-              <a href="4k/home.html">4k Display</a>
-            </li>
-          </ul>
           <h2>Citations</h2>
           <ul>
             <li><a href="citation.html">Citations</a></li>
@@ -76,11 +64,11 @@
         <code>&lt;p&gt;Red is a company that creates &lt;a href=&quot;http://www.linkhere.com&quot;&gt;pills full of creativity&lt;/a&gt; that does almost nothing but make you feel...well, creative!&lt;/p&gt;</code>
 
         <h2 class="divider">Submit/Reset Buttons</h2>
-        <h3>CSS Selector: .button-nav.bg1 and .button-nav.bg2</h3>
+        <h3>CSS Selector: .button-nav.bg1 and .button-nav.bg1.submit.blue</h3>
         <a href="#linkhere" class="button-nav bg1">Submit</a>
-        <a href="#linkhere" class="button-nav bg2">Reset</a>
+        <a href="#linkhere" class="button-nav bg1 submit blue">Reset</a>
         <h3>Sample Code:</h3>
-        <code>&lt;a href=&quot;#linkhere&quot; class=&quot;button-nav bg2&quot;&gt;Reset&lt;/a&gt;</code>
+        <code>&lt;a href=&quot;#linkhere&quot; class=&quot;button-nav bg1&quot;&gt;Reset&lt;/a&gt;</code>
 
 
     
@@ -89,9 +77,25 @@
         <h3>CSS Selector: input, textarea</h3>
         <form>
         <label for="formfield">A single Form Field</label><br>
-        <input type="text" name="formfield">
+        <input type="text" name="formfield" placeholder="Enter Text Here!">
         </form>
+        <h3>Sample Code:</h3>
+        <code>&lt;input type=&quot;text&quot; name=&quot;formfield&quot; placeholder=&quot;Enter Text Here!&quot;&gt;</code>
         <br>
+
+        <h2 class="divider">Quantity Input Field</h2>
+        <h3>CSS Selector: #FillForm</h3>
+        <form>
+          <label for="amount">Amount</label><br>
+          <input type="text" name="amount" placeholder="Quantity" id="FillForm">
+        </form>
+        <h3>Sample Code:</h3>
+        <code>&lt;input type=&quot;text&quot; name=&quot;amount&quot; placeholder=&quot;Quantity&quot; id=&quot;FillForm&quot;&gt;</code>
+        <br>
+        <br>
+
+        <h2 class="divider">Text Area</h2>
+        <h3>CSS Selector: textarea</h3>
         <label>Comment box</label><br>
         <textarea rows="4" cols="50" placeholder="Please write in here!"></textarea>
         <h3>Sample Code:</h3>
@@ -179,7 +183,7 @@
 
     </article>
 	
-<p>Created by Vincent Wah<br>
+<p>Created by Vincent Wah &amp; Jeremy Lo<br>
     IAT 339 - D201</p>
 
 </body>
